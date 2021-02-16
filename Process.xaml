@@ -196,7 +196,7 @@
                   <mva:VisualBasicReference x:TypeArguments="ui:Browser" ExpressionText="io_BrowserSession" />
                 </InOutArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_SearchWord">
-                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_TransactionItem.SpecificContent(&quot;Search Word&quot;).ToString" />
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_TransactionItem.SpecificContent(&quot;SearchWord&quot;).ToString" />
                 </InArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_FirstResult">
                   <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_FirstSearchResult" />

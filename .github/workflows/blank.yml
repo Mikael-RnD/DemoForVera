@@ -33,7 +33,7 @@ jobs:
         with:
           # PowerShell script to execute in Actions-hydrated context
           script: 
-            Get-PackageProvider -Name NuGet
+            Install-PackageProvider -Name NuGet -Force -Scope CurrentUser
 
       # Runs a single command using the runners shell
       - name: Run a one-line script

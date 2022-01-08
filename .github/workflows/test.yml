@@ -26,9 +26,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: NuGet/setup-nuget@v1.0.5
-
-      #- name: Setup UiPath CLI
-      #  run: 'nuget.exe install UiPath.CLI -Version 1.0.7985.19721 -Source https://www.myget.org/F/uipath-dev/api/v3/index.json'
+      
+      - name: Setup UiPath CLI
+        run: nuget install UiPath.CLI -Version 1.0.7985.19721 -Source https://www.myget.org/F/uipath-dev/api/v3/index.json
+        
       - name: Echo
         run: echo $GITHUB_WORKSPACE
       - name: UiPath Pack

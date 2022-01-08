@@ -28,7 +28,7 @@ jobs:
       - uses: NuGet/setup-nuget@v1.0.5
 
       - name: Setup UiPath CLI
-        run: 'uipcli.exe package pack "$GITHUB_WORKSPACE/ProjectFolder/.json" -o "$(Build.ArtifactStagingDirectory)\Output" --libraryOrchestratorUrl https://*******com/ --libraryOrchestratorTenant ****** --libraryOrchestratorUsername LU-RT-DEV --libraryOrchestratorPassword ********** --autoVersion --outputType Process
+        run: 'C:\actions-runner\UiPath.CLI.1.0.7985.19721\lib\net461\uipcli.exe package pack "${{GITHUB_WORKSPACE}}/ProjectFolder/.json" -o "$(Build.ArtifactStagingDirectory)\Output" --libraryOrchestratorUrl https://*******com/ --libraryOrchestratorTenant ****** --libraryOrchestratorUsername LU-RT-DEV --libraryOrchestratorPassword ********** --autoVersion --outputType Process
       
       # Runs a single command using the runners shell
       - name: Run a one-line script

@@ -29,13 +29,4 @@ jobs:
 
       - name: UiPath Pack
         run: '$GITHUB_WORKSPACE\UiPath.CLI.1.0.7985.19721\lib\net461\uipcli.exe package pack "$GITHUB_WORKSPACE\ProjectFolder\project.json" -o "$GITHUB_WORKSPACE" --libraryOrchestratorUrl https://cloud.uipath.com/hppcntv --libraryOrchestratorTenant Mikaels_RnD --libraryOrchestratorUsername hppcntv --libraryOrchestratorPassword tuVh9N_P5V-4yCgpu1vm3Q11HU0ZC1m3o9B_p-KoHcunm --autoVersion --outputType Process' 
-      
-# Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    

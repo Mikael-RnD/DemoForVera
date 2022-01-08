@@ -32,5 +32,5 @@ jobs:
       - name: Echo
         run: echo $GITHUB_WORKSPACE
       - name: UiPath Pack
-        run: 'C:\actions-runner\_work\UiPath.CLI.1.0.7985.19721\lib\net461\uipcli.exe package pack "${{github.workspace}}\DemoForVera\ProjectFolder\project.json" -o "${{github.workspace}}" --autoVersion --outputType Process' 
+        run: 'C:\actions-runner\_work\UiPath.CLI.1.0.7985.19721\lib\net461\uipcli.exe package pack "${{github.workspace}}\ProjectFolder\project.json" -o "${{github.workspace}}" --autoVersion --outputType Process' 
     

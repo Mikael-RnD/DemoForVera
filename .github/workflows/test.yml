@@ -31,5 +31,5 @@ jobs:
       #  run: 'nuget.exe install UiPath.CLI -Version 1.0.7985.19721 -Source https://www.myget.org/F/uipath-dev/api/v3/index.json'
         
       - name: UiPath Pack
-        run: '$GITHUB_WORKSPACE\UiPath.CLI.1.0.7985.19721\lib\net461\uipcli.exe package pack "$GITHUB_WORKSPACE\ProjectFolder\project.json" -o "$GITHUB_WORKSPACE" --libraryOrchestratorUrl https://cloud.uipath.com/hppcntv --libraryOrchestratorTenant Mikaels_RnD --libraryOrchestratorUsername hppcntv --libraryOrchestratorPassword tuVh9N_P5V-4yCgpu1vm3Q11HU0ZC1m3o9B_p-KoHcunm --autoVersion --outputType Process' 
+        run: '"C:\actions-runner\_work\UiPath.CLI.1.0.7985.19721\lib\net461\uipcli.exe" package pack "$GITHUB_WORKSPACE\ProjectFolder\project.json" -o "$GITHUB_WORKSPACE" --libraryOrchestratorUrl https://cloud.uipath.com/hppcntv --libraryOrchestratorTenant Mikaels_RnD --libraryOrchestratorUsername hppcntv --libraryOrchestratorPassword tuVh9N_P5V-4yCgpu1vm3Q11HU0ZC1m3o9B_p-KoHcunm --autoVersion --outputType Process' 
     

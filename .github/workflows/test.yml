@@ -28,7 +28,7 @@ jobs:
       - uses: NuGet/setup-nuget@v1.0.5
 
       - name: Setup UiPath CLI
-        run: nuget.exe install UiPath.CLI -Version 1.0.7985.19721 -Source https://www.myget.org/F/uipath-dev/api/v3/index.json
+        run: 'uipcli.exe package pack "C:\agent\_work\1\s\****** \project.json" -o "$(Build.ArtifactStagingDirectory)\Output" --libraryOrchestratorUrl https://*******com/ --libraryOrchestratorTenant ****** --libraryOrchestratorUsername LU-RT-DEV --libraryOrchestratorPassword ********** --autoVersion --outputType Process
       
       # Runs a single command using the runners shell
       - name: Run a one-line script
